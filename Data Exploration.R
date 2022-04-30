@@ -35,7 +35,7 @@ lines(data.pm10.fit$time.series[,2], col = "black")
 
 
 #COMPARE URBAN AND SURBAN SITES
-#Remove irrelevant variables
+#Remove irrelevant variables and duplicates
 data.z <- data.frame(AllData$year, AllData$month, AllData$hour, 
                      AllData$PM2.5, AllData$station)
 colnames(data.z) <- c("year", "month", "hour", "PM2.5", "station")
